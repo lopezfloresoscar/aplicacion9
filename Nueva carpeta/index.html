@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+ div {
+	 color:#60C;
+	}
+</style>
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1><i>Datos Personales del Alumno</i></h1>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Foto de perfil</h1>
+            <div>
+            <p>Esta es mi imagen de perfil:</p>
+            <br>
+            </div>
+           <div>
+           <img src="imagenes/oscarlopezflores.jpg" width="50%" height="50%"> </div>
+          </div>
+          </div>
+          
+<div>
+    <ul id="lista" data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Datos generales</h2>
+    <p>Se muestra el nombre</p>
+      </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Fecha de nacimiento</h2>
+        <p>Se muestra el dia, mes y el año de nacimiento</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+         <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Domicilio</h2>
+         <p>Muestra el domicilio del Alumno</p>
+         </a>
+         </li>
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Deporte favorito</h2>
+         <p>Muestra el Deporte que mas le agrada al Alumno</p>
+         </a>
+         </li> 
+         <li class="ui-first-child ui-last-child">
+         <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>Otros Gustos e Intereses</h2>
+         <p>Muestra otros gustos del alumno</p>
+         </a>
+         </li>
+       </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+       <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <div>
+      <h4>Aplicacion uno</h4>
+      <h4>lopez flores oscar</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Nombre</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div>
+        <h2>oscar lopez flores</h2>
+        </div>
+        </div>
+        <div data-role="footer" data-theme="a">
+          <h4>Aplicacion Uno, olf</h4>
+        </div>
+     </div>
+     </div>  
+     
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Fecha de nacimiento</h1>
+   </div>
+   <div data-role="content" align="center">
+      <div>
+        <h2>20 de agosto de 1999</h2></div>
+      </div>
+      <div data-role="footer" data-theme="a">
+         <h4>Aplicacion Uno, olf</h4>
+      </div>
+     </div>
+</div> 
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Domicilio</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <h2>privada vallarta de la 25 norte #101 col solares chicos</h2></div>
+    </div>
+  <div data-role="footer" data-theme="a">
+      <h4>Aplicacion Uno, olf</h4>
+    </div>
+   </div>
+</div> 
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Deporte Favorito</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <h2>Futbol!</h2>
+       <img src="imagenes/futbol.jpg" width="50%" height="50%">
+    </div>
+   </div>
+  <div data-role="footer" data-theme="a">
+      <h4>Aplicacion Uno, olf</h4>
+    </div>
+   </div>
+</div>                                                        
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Gustos e Interes</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+       <h2>jugar maquinitas</h2>
+      <img src="imagenes/kof.jpg" width="50%" height="50%">
+    </div>
+  <div data-role="footer" data-theme="a">
+      <h4>Aplicacion Uno, olf</h4>
+    </div>
+   </div>
+</div>
+</body>
+</html>
